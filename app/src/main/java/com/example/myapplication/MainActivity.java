@@ -10,9 +10,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    int a=50;
-    int b=60;
-    int c=70;
+    int a1=50;
+    int b1=60;
+    int c1=70;
     public void insert(){
         String a1="请问1";
     }
