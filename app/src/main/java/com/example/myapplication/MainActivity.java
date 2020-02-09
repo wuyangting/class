@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     int b=20;
     int c=30;
     public void insert(){
-         int d=a+b;
+        String a1="阿搜到";
     }
     public void delay() throws InterruptedException {
         Thread.sleep(1000);
