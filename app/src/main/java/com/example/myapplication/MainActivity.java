@@ -10,13 +10,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    int a=10;
-    int b=20;
-    int c=30;
+    int a=50;
+    int b=60;
+    int c=70;
     public void insert(){
-        String a1="阿搜到";
+        String a1="请问1";
     }
     public void delay() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(2000);
     }
 }
