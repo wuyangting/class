@@ -16,4 +16,7 @@ public class MainActivity extends AppCompatActivity {
     public void insert(){
          int d=a+b;
     }
+    public void delay() throws InterruptedException {
+        Thread.sleep(1000);
+    }
 }
