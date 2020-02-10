@@ -8,20 +8,23 @@ import android.widget.Toast;
 
 import com.example.myapplication.MainPresenter.Pre;
 
-public class MainActivity extends BaseActivity<MainView,Pre> implements View.OnClickListener,MainView{
+public class MainActivity extends BaseActivity<MainView, Pre> implements View.OnClickListener, MainView {
 
     private Button mSend;
-//创建的时候会先走onCreate方法所以会走BaseActivity里的onCreate
+
+    //创建的时候会先走onCreate方法所以会走BaseActivity里的onCreate
     @Override
     protected Pre initPre() {
         return new Pre();
     }
 
-    public void initView() {
+    @Override
+    protected void initView() {
         mSend = (Button) findViewById(R.id.send);
         mSend.setOnClickListener(this);
     }
-//父类方法
+
+    //父类方法
     @Override
     protected int getLayoutId() {
         return R.layout.activity_main;

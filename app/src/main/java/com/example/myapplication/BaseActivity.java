@@ -24,7 +24,7 @@ public abstract class BaseActivity<V extends BaseView,P extends BasePresenter> e
         mPre = initPre();
         if(mPre!=null){
             //传递v层对象不再使用构造,使用方法传递,v和p层在父类中统一相互持有对方对象
-            mPre.onAttach((V)this);
+            mPre.onAttach((V) this);
         }
         initData();
         initListener();
@@ -33,15 +33,15 @@ public abstract class BaseActivity<V extends BaseView,P extends BasePresenter> e
     protected abstract P initPre();
 
 
-    private void initListener() {
+    protected void initListener() {
 
     }
 
-    private void initData() {
+    protected void initData() {
 
     }
 
-    public  void initView(){}
+    protected   void initView(){}
     //专门提供布局id的,必须由子类复写
     protected abstract int getLayoutId();
 }
