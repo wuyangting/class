@@ -20,6 +20,7 @@ public abstract class BaseActivity<V extends BaseView,P extends BasePresenter> e
         //放置布局因为不同的Activity的布局不一样，所以必须要重写getLayoutId()这个方法，所以这个方法是抽象的。
         setContentView(getLayoutId());
         initView();
+        //实打实大所多撒大大所大所大所大所大所多撒大所大所测试测测测硕大的实打实大师大师的撒多是哒是哒萨达萨达大声道撒大所多
         //设置p层
         mPre = initPre();
         if(mPre!=null){
